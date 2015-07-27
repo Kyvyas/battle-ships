@@ -9,8 +9,8 @@ let(:ship) { double :ship }
  end
 
  it 'has a ship once ship is placed' do
- 	expect(subject.receive_ship(ship)).to eq(ship)
+   allow(ship).to receive(:place) {ship}
+   subject.receive_ship ship
+   expect(subject.receive_ship ship).to be ship
  end
-
 end
-

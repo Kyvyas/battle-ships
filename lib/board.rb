@@ -2,13 +2,16 @@ require_relative 'ship'
 
 class Board
 
-	def intitialize
+ 	attr_reader :ships
+
+	def initialize
 		@ships = []
 	end
 
 	def receive_ship(ship)
-		@ships << ship
 		ship.place
+		@ships << ship
+		ship
 	end
 
 end
