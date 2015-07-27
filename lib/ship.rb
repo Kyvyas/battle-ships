@@ -4,13 +4,11 @@ class Ship
     @placed = false
   end
 
-  def place
-    @placed = true
+  def placed?
+    @placed == true
   end
 
-  def placed?
-    if @placed == true
-      true
-    end
+  def place
+    @placed = true
   end
 end

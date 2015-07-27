@@ -7,8 +7,8 @@ describe Ship do
   end
 
   it 'its status should be "placed" once placed' do
-    ship = subject.place
-    expect(ship).to be_placed
+    subject.place
+    expect(subject).to be_placed
   end
 
 end
