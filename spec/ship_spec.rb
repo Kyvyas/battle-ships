@@ -11,4 +11,12 @@ describe Ship do
     expect(subject).to be_placed
   end
 
+  it 'should have different sizes' do
+  	expect(subject.sizes).to (be > 1)
+  end
+
+  it 'allow user to choose ship size' do
+  	expect(subject).to respond_to(:ship_size)
+  end
+
 end
