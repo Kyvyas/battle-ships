@@ -10,9 +10,9 @@ class Ship
   	'PB' => 2
   }
 
-  def initialize(ship_size=SHIPS[])
+  def initialize(ship_size)
+    @ship = SHIPS[ship_size]
     @placed = false
-    @ship_size = ship_size
   end
 
   def placed?
@@ -26,9 +26,5 @@ class Ship
   def sizes
     SHIP_SIZES.length
   end
-
-  def pick_ship
-  end
-
 
 end

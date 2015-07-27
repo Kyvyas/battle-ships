@@ -1,4 +1,3 @@
-
 require "grid"
 
 describe Grid do
